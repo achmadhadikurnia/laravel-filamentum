@@ -203,7 +203,7 @@ Filamentum comes with several pre-installed packages to help you build your appl
 - [laravel/octane](https://github.com/laravel/octane) v2 - High-performance Laravel application server
 <!-- - [laravel/boost](https://github.com/laravel/boost) v1 - AI-assisted Laravel development experience -->
 - [laravel/sail](https://github.com/laravel/sail) v1 - Docker setup for Laravel applications
-<!-- - [laravel/telescope](https://github.com/laravel/telescope) v5 - Debug assistant for Laravel -->
+- [laravel/telescope](https://github.com/laravel/telescope) v5 - Debug assistant for Laravel
 <!-- - [filament/filament](https://github.com/filamentphp/filament) v4 - Admin panel & app UI framework -->
 <!-- - [bezhansalleh/filament-shield](https://github.com/bezhanSalleh/filament-shield) v4 - Role & permission management -->
 <!-- - [spatie/laravel-activitylog](https://github.com/spatie/laravel-activitylog) v4 - Activity logging for Laravel -->
