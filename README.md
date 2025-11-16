@@ -179,7 +179,7 @@ php artisan octane:start
 
 For more information about Laravel Octane configuration and usage, please refer to the [official Laravel Octane documentation](https://laravel.com/docs/12.x/octane).
 
-<!-- ## Running Tests
+## Running Tests
 
 You can run the test suite using Composer:
 
@@ -193,7 +193,7 @@ Alternatively, you can run tests directly using the Artisan command:
 
 ```bash
 php artisan test
-``` -->
+```
 
 ## Installed Packages
 
