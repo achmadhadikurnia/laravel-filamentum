@@ -161,7 +161,7 @@ Once the containers are up, you can access your application in your web browser 
 
 For more information about Laravel Sail configuration and usage, please refer to the [official Laravel Sail documentation](https://laravel.com/docs/12.x/sail).
 
-<!-- ## Laravel Octane
+## Laravel Octane
 
 This project comes with Laravel Octane pre-installed for high-performance serving of your Laravel application. To use Octane with FrankenPHP (the default server for this project), you need to run the installation command:
 
@@ -179,7 +179,7 @@ php artisan octane:start
 
 For more information about Laravel Octane configuration and usage, please refer to the [official Laravel Octane documentation](https://laravel.com/docs/12.x/octane).
 
-## Running Tests
+<!-- ## Running Tests
 
 You can run the test suite using Composer:
 
