@@ -212,7 +212,6 @@ Filamentum comes with several pre-installed packages to help you build your appl
 <!-- - [spatie/laravel-query-builder](https://github.com/spatie/laravel-query-builder) v6 - Build Eloquent queries from API requests -->
 <!-- - [pestphp/pest](https://github.com/pestphp/pest) v4 - Elegant PHP testing framework -->
 - [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar) v3 - Debug bar for Laravel
-<!-- - [barryvdh/laravel-ide-helper](https://github.com/barryvdh/laravel-ide-helper) v3 - IDE helper files for Laravel -->
 
 ## Recommended Additional Packages
 
@@ -223,7 +222,7 @@ To further enhance your Laravel application, consider adding these recommended p
 - [laravel/passport](https://github.com/laravel/passport) - OAuth2 server for API authentication
 - [laravel/sanctum](https://github.com/laravel/sanctum) - Authentication for SPAs and APIs
 - [laravel/socialite](https://github.com/laravel/socialite) - OAuth authentication with social networks
-- [sentry/sentry-laravel](https://github.com/getsentry/sentry-laravel) - Error tracking and monitoring
+- [barryvdh/laravel-ide-helper](https://github.com/barryvdh/laravel-ide-helper) v3 - IDE helper files for Laravel
 
 Refer to each package's documentation for specific installation and configuration instructions.
 
