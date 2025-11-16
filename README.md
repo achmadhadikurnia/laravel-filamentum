@@ -147,6 +147,20 @@ You may also automate this process by adding it to your Composer "post-update-cm
 }
 ``` -->
 
+## Laravel Sail
+
+This project comes with Laravel Sail pre-installed for Docker-based development environments. To get started with Sail, you'll need to have Docker installed on your system.
+
+After installing Docker, you can start the Sail environment with:
+
+```bash
+./vendor/bin/sail up
+```
+
+Once the containers are up, you can access your application in your web browser at http://localhost.
+
+For more information about Laravel Sail configuration and usage, please refer to the [official Laravel Sail documentation](https://laravel.com/docs/12.x/sail).
+
 <!-- ## Laravel Octane
 
 This project comes with Laravel Octane pre-installed for high-performance serving of your Laravel application. To use Octane with FrankenPHP (the default server for this project), you need to run the installation command:
@@ -188,7 +202,7 @@ Filamentum comes with several pre-installed packages to help you build your appl
 - [laravel/framework](https://github.com/laravel/framework) v12 - The core Laravel framework
 <!-- - [laravel/octane](https://github.com/laravel/octane) v2 - High-performance Laravel application server -->
 <!-- - [laravel/boost](https://github.com/laravel/boost) v1 - AI-assisted Laravel development experience -->
-<!-- - [laravel/sail](https://github.com/laravel/sail) v1 - Docker setup for Laravel applications -->
+- [laravel/sail](https://github.com/laravel/sail) v1 - Docker setup for Laravel applications
 <!-- - [laravel/telescope](https://github.com/laravel/telescope) v5 - Debug assistant for Laravel -->
 <!-- - [filament/filament](https://github.com/filamentphp/filament) v4 - Admin panel & app UI framework -->
 <!-- - [bezhansalleh/filament-shield](https://github.com/bezhanSalleh/filament-shield) v4 - Role & permission management -->
