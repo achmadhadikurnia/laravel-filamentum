@@ -1,9 +1,24 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel/laravel",
+    "name": "achmadhadikurnia/laravel-filamentum",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
-    "keywords": ["laravel", "framework"],
+    "description": "Filamentum is a Laravel starter kit with Filament admin panel.",
+    "keywords": [
+        "laravel",
+        "starter-kit",
+        "filamentum",
+        "filament",
+        "kanekescom",
+        "framework"
+    ],
+    "authors": [
+        {
+            "name": "Achmad Hadi Kurnia",
+            "email": "imachmadhadikurnia@gmail.com",
+            "role": "Developer",
+            "homepage": "https://achmadhadikurnia.com"
+        }
+    ],
     "license": "MIT",
     "require": {
         "php": "^8.2",

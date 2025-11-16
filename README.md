@@ -1,59 +1,218 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Filamentum
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+<a href="https://github.com/kanekescom/filamentum/actions"><img src="https://github.com/kanekescom/filamentum/actions/workflows/tests.yml/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/kanekescom/filamentum"><img src="https://img.shields.io/packagist/dt/kanekescom/filamentum" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/kanekescom/filamentum"><img src="https://img.shields.io/packagist/v/kanekescom/filamentum" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/kanekescom/filamentum"><img src="https://img.shields.io/github/license/kanekescom/filamentum" alt="License"></a>
 </p>
 
-## About Laravel
+## About Filamentum
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Filamentum is a Laravel starter kit with the Filament admin panel and essential packages pre-installed.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Installation
 
-## Learning Laravel
+You can install Filamentum in two ways:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+### 1. Via Laravel Installer
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Create a new project using Laravel installer with Filamentum as the starter kit:
 
-## Laravel Sponsors
+```bash
+laravel new my-app --using=kanekescom/filamentum
+```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 2. Via Composer
 
-### Premium Partners
+You can install Filamentum in two ways:
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+a. Using Composer Create-Project:
+```bash
+composer create-project kanekescom/filamentum my-app
+```
 
-## Contributing
+b. Clone from GitHub:
+```bash
+git clone https://github.com/kanekescom/filamentum.git my-app
+cd my-app
+composer install
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+After installation, your application will be ready with all the essential packages and configurations set up.
 
-## Code of Conduct
+<!-- ## Creating Users
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+To access the Filament admin panel, you'll need to create user accounts. The recommended approach is to use database seeding which creates predefined users with specific roles.
 
-## Security Vulnerabilities
+### Database Seeding (Recommended)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Run the following command to create default users with predefined roles:
+
+```bash
+php artisan db:seed
+```
+
+This command creates a complete user management system with:
+
+1. **Three predefined roles**:
+   - Super Admin (full access to all features)
+   - Admin (access to some admin features)
+   - User (basic access)
+
+2. **Three corresponding users** with the following credentials:
+
+| Name                   | Email                     | Role        | Password  |
+|------------------------|---------------------------|-------------|-----------|
+| Super Admin User       | superadmin@filamentum.com | Super Admin | password  |
+| Admin User             | admin@filamentum.com      | Admin       | password  |
+| Regular User           | user@filamentum.com       | User        | password  |
+
+Once created, you can log in to the admin panel at `/app` using any of these credentials.
+
+### Interactive Command (Alternative)
+
+If you prefer to create individual users interactively, you can use:
+
+```bash
+php artisan make:filament-user
+```
+
+This command will prompt you to enter the user's name, email, and password. Note that users created this way will need to be manually assigned roles and permissions. -->
+
+<!-- ## Filamentum Configuration
+
+Filamentum provides several configuration options that allow you to customize the admin panel behavior. These settings can be configured through environment variables in your `.env` file.
+
+### Panel Path Configuration
+
+You can change the URL path for the Filament admin panel:
+
+```env
+FILAMENTUM_PATH=app
+```
+
+The default path is `app`, which makes the admin panel accessible at `/app`. You can change this to any path you prefer, such as `admin` or `dashboard`.
+
+### Feature Toggles
+
+Filamentum allows you to enable or disable various authentication features:
+
+```env
+FILAMENTUM_REGISTRATION=true
+FILAMENTUM_PASSWORD_RESET=true
+FILAMENTUM_EMAIL_VERIFICATION=true
+FILAMENTUM_EMAIL_CHANGE_VERIFICATION=true
+FILAMENTUM_PROFILE=true
+```
+
+- `FILAMENTUM_REGISTRATION`: Enable or disable user registration (default: false)
+- `FILAMENTUM_PASSWORD_RESET`: Enable or disable password reset functionality (default: false)
+- `FILAMENTUM_EMAIL_VERIFICATION`: Enable or disable email verification (default: false)
+- `FILAMENTUM_EMAIL_CHANGE_VERIFICATION`: Enable or disable email change verification (default: false)
+- `FILAMENTUM_PROFILE`: Enable or disable user profile management (default: true)
+
+### Configuration File
+
+These settings are defined in `config/filamentum.php`. -->
+
+<!-- ## AI Coding Assistance
+
+For developers using AI coding assistants, run the following command to install the MCP server and coding guidelines:
+
+```bash
+php artisan boost:install
+```
+
+This will set up the Model Context Protocol (MCP) server and configure coding guidelines that enhance your AI-assisted development experience.
+
+### Keeping Guidelines Up-to-Date
+
+You may want to periodically update your local AI guidelines to ensure they reflect the latest versions of the Laravel ecosystem packages you have installed. To do so, you can use the boost:update Artisan command:
+
+```bash
+php artisan boost:update
+```
+
+You may also automate this process by adding it to your Composer "post-update-cmd" scripts:
+
+```json
+{
+  "scripts": {
+    "post-update-cmd": [
+      "@php artisan boost:update --ansi"
+    ]
+  }
+}
+``` -->
+
+<!-- ## Laravel Octane
+
+This project comes with Laravel Octane pre-installed for high-performance serving of your Laravel application. To use Octane with FrankenPHP (the default server for this project), you need to run the installation command:
+
+```bash
+php artisan octane:install
+```
+
+When prompted, select "frankenphp" as your server.
+
+After installation, you can start your application using Octane with:
+
+```bash
+php artisan octane:start
+```
+
+For more information about Laravel Octane configuration and usage, please refer to the [official Laravel Octane documentation](https://laravel.com/docs/12.x/octane).
+
+## Running Tests
+
+You can run the test suite using Composer:
+
+```bash
+composer test
+```
+
+This will execute all tests using PestPHP, which is configured as the default testing framework for this project.
+
+Alternatively, you can run tests directly using the Artisan command:
+
+```bash
+php artisan test
+``` -->
+
+## Installed Packages
+
+Filamentum comes with several pre-installed packages to help you build your application:
+
+- [laravel/framework](https://github.com/laravel/framework) v12 - The core Laravel framework
+<!-- - [laravel/octane](https://github.com/laravel/octane) v2 - High-performance Laravel application server -->
+<!-- - [laravel/boost](https://github.com/laravel/boost) v1 - AI-assisted Laravel development experience -->
+<!-- - [laravel/sail](https://github.com/laravel/sail) v1 - Docker setup for Laravel applications -->
+<!-- - [laravel/telescope](https://github.com/laravel/telescope) v5 - Debug assistant for Laravel -->
+<!-- - [filament/filament](https://github.com/filamentphp/filament) v4 - Admin panel & app UI framework -->
+<!-- - [bezhansalleh/filament-shield](https://github.com/bezhanSalleh/filament-shield) v4 - Role & permission management -->
+<!-- - [spatie/laravel-activitylog](https://github.com/spatie/laravel-activitylog) v4 - Activity logging for Laravel -->
+<!-- - [spatie/laravel-backup](https://github.com/spatie/laravel-backup) v9 - Application & database backup tool -->
+<!-- - [spatie/laravel-permission](https://github.com/spatie/laravel-permission) v6 - Roles and permissions management -->
+<!-- - [spatie/laravel-query-builder](https://github.com/spatie/laravel-query-builder) v6 - Build Eloquent queries from API requests -->
+<!-- - [pestphp/pest](https://github.com/pestphp/pest) v4 - Elegant PHP testing framework -->
+<!-- - [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar) v3 - Debug bar for Laravel -->
+<!-- - [barryvdh/laravel-ide-helper](https://github.com/barryvdh/laravel-ide-helper) v3 - IDE helper files for Laravel -->
+
+## Recommended Additional Packages
+
+To further enhance your Laravel application, consider adding these recommended packages:
+
+- [laravel/horizon](https://github.com/laravel/horizon) - Dashboard for Laravel queues
+- [laravel/nightwatch](https://github.com/laravel/nightwatch) - Application monitoring tool
+- [laravel/passport](https://github.com/laravel/passport) - OAuth2 server for API authentication
+- [laravel/sanctum](https://github.com/laravel/sanctum) - Authentication for SPAs and APIs
+- [laravel/socialite](https://github.com/laravel/socialite) - OAuth authentication with social networks
+- [sentry/sentry-laravel](https://github.com/getsentry/sentry-laravel) - Error tracking and monitoring
+
+Refer to each package's documentation for specific installation and configuration instructions.
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Filamentum is open-sourced software licensed under the [MIT license](LICENSE).
