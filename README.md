@@ -177,10 +177,7 @@ Filamentum comes with several pre-installed packages to help you build your appl
 - [laravel/telescope](https://github.com/laravel/telescope) v5 - Debug assistant for Laravel
 - [filament/filament](https://github.com/filamentphp/filament) v4 - Admin panel & app UI framework
 <!-- - [bezhansalleh/filament-shield](https://github.com/bezhanSalleh/filament-shield) v4 - Role & permission management -->
-<!-- - [spatie/laravel-activitylog](https://github.com/spatie/laravel-activitylog) v4 - Activity logging for Laravel -->
-<!-- - [spatie/laravel-backup](https://github.com/spatie/laravel-backup) v9 - Application & database backup tool -->
 - [spatie/laravel-permission](https://github.com/spatie/laravel-permission) v6 - Roles and permissions management
-<!-- - [spatie/laravel-query-builder](https://github.com/spatie/laravel-query-builder) v6 - Build Eloquent queries from API requests -->
 - [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar) v3 - Debug bar for Laravel
 
 ## Recommended Additional Packages
