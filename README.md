@@ -117,7 +117,7 @@ FILAMENTUM_PROFILE=true
 
 These settings are defined in `config/filamentum.php`.
 
-<!-- ## AI Coding Assistance
+## AI Coding Assistance
 
 For developers using AI coding assistants, run the following command to install the MCP server and coding guidelines:
 
@@ -145,7 +145,7 @@ You may also automate this process by adding it to your Composer "post-update-cm
     ]
   }
 }
-``` -->
+```
 
 ## Laravel Sail
 
