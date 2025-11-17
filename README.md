@@ -11,6 +11,21 @@
 
 Filamentum is a Laravel starter kit with the Filament admin panel and essential packages pre-installed.
 
+### Features
+
+#### **Application Menu**
+- [x] Dashboard
+- [x] Users management
+- [x] Roles management
+
+#### **Development Tools**
+- [x] Laravel Debugbar for debugging assistance
+- [x] Laravel Telescope for monitoring and debugging
+
+#### **Deployment Tools**
+- [x] Laravel Sail for containerized development
+- [x] Laravel Octane for high-performance serving
+
 ## Installation
 
 You can install Filamentum in two ways:
