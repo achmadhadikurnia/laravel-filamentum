@@ -16,13 +16,15 @@ Filamentum is a Laravel starter kit with the Filament admin panel and essential 
 
 You can install Filamentum in two ways:
 
-### 1. Via Laravel Installer
+### 1. Via Laravel Installer *(Recommended)*
 
 Create a new project using Laravel installer with Filamentum as the starter kit:
 
 ```bash
 laravel new my-app --using=kanekescom/filamentum
 ```
+
+> **Note:** This is the recommended installation method as it provides the smoothest setup experience.
 
 ### 2. Via Composer
 
