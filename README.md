@@ -24,7 +24,7 @@ Create a new project using Laravel installer with Filamentum as the starter kit:
 laravel new my-app --using=kanekescom/filamentum
 ```
 
-> **Note:** This is the recommended installation method as it provides the smoothest setup experience.
+> **Note:** For more information about Laravel Installer, please refer to the [official Laravel Installer documentation](https://laravel.com/docs/12.x/installation#the-laravel-installer).
 
 ### 2. Via Composer
 
@@ -149,7 +149,7 @@ After installation, you can start your application using Octane with:
 php artisan octane:start
 ```
 
-For more information about Laravel Octane configuration and usage, please refer to the [official Laravel Octane documentation](https://laravel.com/docs/12.x/octane).
+> **Note:** For more information about Laravel Octane configuration and usage, please refer to the [official Laravel Octane documentation](https://laravel.com/docs/12.x/octane).
 
 ## Running Tests
 
