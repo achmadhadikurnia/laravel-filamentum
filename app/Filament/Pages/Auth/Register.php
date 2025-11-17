@@ -2,7 +2,6 @@
 
 namespace App\Filament\Pages\Auth;
 
-use App\Models\User;
 use DanHarrin\LivewireRateLimiting\WithRateLimiting;
 use Filament\Auth\Pages\Register as BaseRegister;
 use Illuminate\Database\Eloquent\Model;
