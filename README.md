@@ -11,7 +11,6 @@
 
 Filamentum is a Laravel starter kit with the Filament admin panel and essential packages pre-installed.
 
-
 ## Installation
 
 You can install Filamentum in two ways:
@@ -43,42 +42,6 @@ composer install
 ```
 
 After installation, your application will be ready with all the essential packages and configurations set up.
-
-## Filamentum Configuration
-
-Filamentum provides several configuration options that allow you to customize the admin panel behavior. These settings can be configured through environment variables in your `.env` file.
-
-### Panel Path Configuration
-
-You can change the URL path for the Filament admin panel:
-
-```env
-FILAMENTUM_PATH=app
-```
-
-The default path is `app`, which makes the admin panel accessible at `/app`. You can change this to any path you prefer, such as `admin` or `dashboard`.
-
-### Feature Toggles
-
-Filamentum allows you to enable or disable various authentication features:
-
-```env
-FILAMENTUM_REGISTRATION=true
-FILAMENTUM_PASSWORD_RESET=true
-FILAMENTUM_EMAIL_VERIFICATION=true
-FILAMENTUM_EMAIL_CHANGE_VERIFICATION=true
-FILAMENTUM_PROFILE=true
-```
-
-- `FILAMENTUM_REGISTRATION`: Enable or disable user registration (default: false)
-- `FILAMENTUM_PASSWORD_RESET`: Enable or disable password reset functionality (default: false)
-- `FILAMENTUM_EMAIL_VERIFICATION`: Enable or disable email verification (default: false)
-- `FILAMENTUM_EMAIL_CHANGE_VERIFICATION`: Enable or disable email change verification (default: false)
-- `FILAMENTUM_PROFILE`: Enable or disable user profile management (default: true)
-
-### Configuration File
-
-These settings are defined in `config/filamentum.php`.
 
 ## Filamentum Configuration
 
