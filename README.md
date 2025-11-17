@@ -176,7 +176,7 @@ Filamentum comes with several pre-installed packages to help you build your appl
 - [laravel/sail](https://github.com/laravel/sail) v1 - Docker setup for Laravel applications
 - [laravel/telescope](https://github.com/laravel/telescope) v5 - Debug assistant for Laravel
 - [filament/filament](https://github.com/filamentphp/filament) v4 - Admin panel & app UI framework
-<!-- - [bezhansalleh/filament-shield](https://github.com/bezhanSalleh/filament-shield) v4 - Role & permission management -->
+- [bezhansalleh/filament-shield](https://github.com/bezhanSalleh/filament-shield) v4 - Role & permission management
 - [spatie/laravel-permission](https://github.com/spatie/laravel-permission) v6 - Roles and permissions management
 - [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar) v3 - Debug bar for Laravel
 
