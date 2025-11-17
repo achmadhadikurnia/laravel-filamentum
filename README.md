@@ -48,7 +48,7 @@ After installation, your application will be ready with all the essential packag
 
 To access the Filament admin panel, you'll need to create user accounts. The recommended approach is to use database seeding which creates predefined users with specific roles.
 
-### Database Seeding (Recommended)
+### Database Seeding *(Recommended)*
 
 Run the following command to create default users with predefined roles:
 
