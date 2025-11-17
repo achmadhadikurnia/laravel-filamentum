@@ -42,7 +42,7 @@ composer install
 
 After installation, your application will be ready with all the essential packages and configurations set up.
 
-<!-- ## Creating Users
+## Creating Users
 
 To access the Filament admin panel, you'll need to create user accounts. The recommended approach is to use database seeding which creates predefined users with specific roles.
 
@@ -79,9 +79,9 @@ If you prefer to create individual users interactively, you can use:
 php artisan make:filament-user
 ```
 
-This command will prompt you to enter the user's name, email, and password. Note that users created this way will need to be manually assigned roles and permissions. -->
+This command will prompt you to enter the user's name, email, and password. Note that users created this way will need to be manually assigned roles and permissions.
 
-<!-- ## Filamentum Configuration
+## Filamentum Configuration
 
 Filamentum provides several configuration options that allow you to customize the admin panel behavior. These settings can be configured through environment variables in your `.env` file.
 
@@ -115,7 +115,7 @@ FILAMENTUM_PROFILE=true
 
 ### Configuration File
 
-These settings are defined in `config/filamentum.php`. -->
+These settings are defined in `config/filamentum.php`.
 
 <!-- ## AI Coding Assistance
 
