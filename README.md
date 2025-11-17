@@ -57,9 +57,9 @@ php artisan db:seed
 This command creates a complete user management system with:
 
 1. **Three predefined roles**:
-   - Super Admin (full access to all features)
-   - Admin (access to some admin features)
-   - User (basic access)
+   - Super Admin (can access Dashboard, Users, and Roles)
+   - Admin (can access Dashboard and Users)
+   - User (can only access Dashboard)
 
 2. **Three corresponding users** with the following credentials:
 
