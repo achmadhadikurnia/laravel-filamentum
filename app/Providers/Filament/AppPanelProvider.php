@@ -2,7 +2,7 @@
 
 namespace App\Providers\Filament;
 
-use BezhanSalleh\FilamentShield\FilamentShieldPlugin;
+use App\Filament\Pages\Auth\Register;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
 use Filament\Http\Middleware\DisableBladeIconComponents;
@@ -29,7 +29,7 @@ class AppPanelProvider extends PanelProvider
             ->id('app')
             ->path(config('filamentum.path', 'app'))
             ->login()
-            ->when(config('filamentum.features.registration', true), fn($panel) => $panel->registration(\App\Filament\Pages\Auth\Register::class))
+            ->when(config('filamentum.features.registration', true), fn($panel) => $panel->registration(Register::class))
             ->when(config('filamentum.features.password_reset', false), fn($panel) => $panel->passwordReset())
             ->when(config('filamentum.features.email_verification', false), fn($panel) => $panel->emailVerification())
             ->when(config('filamentum.features.email_change_verification', false), fn($panel) => $panel->emailChangeVerification())
