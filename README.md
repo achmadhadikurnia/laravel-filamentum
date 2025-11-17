@@ -117,36 +117,6 @@ FILAMENTUM_PROFILE=true
 
 These settings are defined in `config/filamentum.php`.
 
-## AI Coding Assistance
-
-For developers using AI coding assistants, run the following command to install the MCP server and coding guidelines:
-
-```bash
-php artisan boost:install
-```
-
-This will set up the Model Context Protocol (MCP) server and configure coding guidelines that enhance your AI-assisted development experience.
-
-### Keeping Guidelines Up-to-Date
-
-You may want to periodically update your local AI guidelines to ensure they reflect the latest versions of the Laravel ecosystem packages you have installed. To do so, you can use the boost:update Artisan command:
-
-```bash
-php artisan boost:update
-```
-
-You may also automate this process by adding it to your Composer "post-update-cmd" scripts:
-
-```json
-{
-  "scripts": {
-    "post-update-cmd": [
-      "@php artisan boost:update --ansi"
-    ]
-  }
-}
-```
-
 ## Laravel Sail
 
 This project comes with Laravel Sail pre-installed for Docker-based development environments. To get started with Sail, you'll need to have Docker installed on your system.
@@ -201,7 +171,6 @@ Filamentum comes with several pre-installed packages to help you build your appl
 
 - [laravel/framework](https://github.com/laravel/framework) v12 - The core Laravel framework
 - [laravel/octane](https://github.com/laravel/octane) v2 - High-performance Laravel application server
-<!-- - [laravel/boost](https://github.com/laravel/boost) v1 - AI-assisted Laravel development experience -->
 - [laravel/sail](https://github.com/laravel/sail) v1 - Docker setup for Laravel applications
 - [laravel/telescope](https://github.com/laravel/telescope) v5 - Debug assistant for Laravel
 <!-- - [filament/filament](https://github.com/filamentphp/filament) v4 - Admin panel & app UI framework -->
